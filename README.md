@@ -12,3 +12,6 @@ $ git clone https://github.com/Quielo/r6vc-app.git
 - fetch branch
 - checkout branch
 - push to branch
+
+write your name down:
+1- quielo
