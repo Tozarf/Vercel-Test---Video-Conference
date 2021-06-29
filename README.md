@@ -1,9 +1,23 @@
 # Config
 
-first create a react app in your computer.
-Then clone the repo to that same location:
+Clone the repo to a desired location in your computer.
 
 $ git clone https://github.com/Quielo/r6vc-app.git
+
+Then you will need to copy the "node_modules" folder into the cloned project.
+after that tap:
+
+$ git status
+
+If git hasn't been init yet, then write:
+
+$ git init
+
+Proceed to update your git config:
+
+$ git config --global user.name {your name}
+
+$ git config --global user.email {your email}
 
 - clone repo
 - git init
