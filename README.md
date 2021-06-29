@@ -63,3 +63,18 @@ NAME LIST TO UPDATE:
 3-
 
 4-
+
+\*\*Also everything shoul be update, but in case it doesn't, write down:
+
+$ git pull origin develop
+
+That should do.
+
+To check if the project is setup correctly in you VSC terminal write:
+
+$ npm start
+
+localhost:3000 should open normally and down the React logo should appeard
+"Hello world" in blue.
+
+Happy Hacking!
