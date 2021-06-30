@@ -2,7 +2,7 @@
 
 Clone the repo to a desired location in your computer.
 
-$ git clone https://github.com/Quielo/R6VC
+$ git clone https://github.com/Quielo/R6VC.git
 
 Then you will need to copy the "node_modules" folder into the cloned project.
 after that tap:
@@ -26,7 +26,7 @@ $ git remote
 It should be called "origin".
 if nothing appears then write down:
 
-$ git remote add origin https://github.com/Quielo/R6VC
+$ git remote add origin https://github.com/Quielo/R6VC.git
 
 Then "origin" should appear as your remote.
 Next we need to fetch the develop branch from the remote,
