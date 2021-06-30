@@ -105,7 +105,8 @@ the "develop" branch.
 $ git fetch origin develop
 
 [
-Develop branch is our code up to date
+
+    Develop branch is our code up to date
 
     QA branch is our code battleground
 
