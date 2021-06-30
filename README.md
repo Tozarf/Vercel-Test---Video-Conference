@@ -2,7 +2,7 @@
 
 Clone the repo to a desired location in your computer.
 
-$ git clone https://github.com/Quielo/r6vc-app.git
+$ git clone https://github.com/Quielo/R6VC
 
 Then you will need to copy the "node_modules" folder into the cloned project.
 after that tap:
@@ -26,7 +26,7 @@ $ git remote
 It should be called "origin".
 if nothing appears then write down:
 
-$ git remote add origin https://github.com/Quielo/r6vc-app.git
+$ git remote add origin https://github.com/Quielo/R6VC
 
 Then "origin" should appear as your remote.
 Next we need to fetch the develop branch from the remote,
@@ -51,7 +51,7 @@ $ git commit -m "Commit test"
 $ git push
 
 If everything goes north, there should be no problems when pushing the
-commits, and in the remote repo, changes shoul appear under the
+commits, and in the remote repo, changes should appear under the
 "develop" branch.
 
 NAME LIST TO UPDATE:
@@ -64,7 +64,7 @@ NAME LIST TO UPDATE:
 
 4-
 
-\*\*Also everything shoul be update, but in case it doesn't, write down:
+\*\*Also everything should be update, but in case it doesn't, write down:
 
 $ git pull origin develop
 
@@ -76,5 +76,15 @@ $ npm start
 
 localhost:3000 should open normally and down the React logo should appeard
 "Hello world" in blue.
+
+After finishing all this setup is time to move to your personal branch,
+try practicing repeating the last steps for pulling and switching to develop,
+but insted try to switch to your personal branch. 
+{
+  moni = $ git pull origin moni / $ git checkout moni
+  charly = $ git pull origin charly / $ git checkout charly
+  fausto = $ git pull origin fausto / $ git checkout fausto
+  quielo = $ git pull origin quielo / $ git checkout quielo
+}
 
 Happy Hacking!
