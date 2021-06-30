@@ -8,7 +8,7 @@ Then you will need to type:
 
 $ npm install
 
-that will install the "node_modules" folder into the cloned project.
+That will install the "node_modules" folder into the cloned project.
 after that tap:
 
 $ git status
@@ -62,7 +62,7 @@ NAME LIST TO UPDATE:
 
 1- Quielo
 
-2-
+2- Roier
 
 3-
 
