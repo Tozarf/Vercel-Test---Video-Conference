@@ -4,7 +4,11 @@ Clone the repo to a desired location in your computer.
 
 $ git clone https://github.com/Quielo/R6VC.git
 
-Then you will need to copy the "node_modules" folder into the cloned project.
+Then you will need to write:
+
+$ npm install
+
+To install the "node_modules" folder into the cloned project.
 after that tap:
 
 $ git status
@@ -58,11 +62,13 @@ NAME LIST TO UPDATE:
 
 1- Quielo
 
-2-
+2- Roier
 
 3-
 
 4-
+
+5-
 
 \*\*Also everything should be update, but in case it doesn't, write down:
 
@@ -79,15 +85,15 @@ localhost:3000 should open normally and down the React logo should appeard
 
 After finishing all this setup is time to move to your personal branch,
 try practicing repeating the last steps for pulling and switching to develop,
-but insted try to switch to your personal branch. 
+but insted try to switch to your personal branch.
 {
-  moni = $ git pull origin moni / $ git checkout moni
-  
-  charly = $ git pull origin charly / $ git checkout charly
-  
-  fausto = $ git pull origin fausto / $ git checkout fausto
-  
-  quielo = $ git pull origin quielo / $ git checkout quielo
+moni = $ git pull origin moni / $ git checkout moni
+
+charly = $ git pull origin charly / $ git checkout charly
+
+fausto = $ git pull origin fausto / $ git checkout fausto
+
+quielo = $ git pull origin quielo / $ git checkout quielo
 }
 
 Happy Hacking!
