@@ -1,22 +1,22 @@
 # Config
 
+First of all you will need to make a fork to your Github account,
+try this, in this page in te upper-right corner, you should see a button that says "Fork".
+After clicking it, it'll ask to were you want to fork the repo, select your Github
+account.
+Then move to your accoun and look for the newly forked repo.
+
+In tha forked repo > inside your github account >
+
 Clone the repo to a desired location in your computer.
 
-$ git clone https://github.com/Quielo/R6VC.git
+$ git clone {Repo url}
 
-<<<<<<< HEAD
-Then you will need to write:
-
-$ npm install
-
-To install the "node_modules" folder into the cloned project.
-=======
 Then you will need to type:
 
 $ npm install
 
 That will install the "node_modules" folder into the cloned project.
->>>>>>> 181a27190a8ec1f6cb35457c404c6006771a2456
 after that tap:
 
 $ git status
@@ -38,15 +38,15 @@ $ git remote
 It should be called "origin".
 if nothing appears then write down:
 
-$ git remote add origin https://github.com/Quielo/R6VC.git
+$ git remote add origin {Repo url}
 
 Then "origin" should appear as your remote.
-Next we need to fetch the develop branch from the remote,
-and pair it with you local, so write:
+Next we need to fetch the QA branch from the remote,
+and pair it with your local, so write:
 
-$ git fetch origin develop
+$ git fetch origin QA
 
-$ git checkout develop
+$ git switch QA
 
 After you have done all this steps, try to add your name down below,
 then add and commit, and finally push to see if everything is working
@@ -64,7 +64,7 @@ $ git push
 
 If everything goes north, there should be no problems when pushing the
 commits, and in the remote repo, changes should appear under the
-"develop" branch.
+"QA" branch.
 
 NAME LIST TO UPDATE:
 
@@ -80,7 +80,7 @@ NAME LIST TO UPDATE:
 
 \*\*Also everything should be update, but in case it doesn't, write down:
 
-$ git pull origin develop
+$ git pull origin QA
 
 That should do.
 
@@ -91,17 +91,22 @@ $ npm start
 localhost:3000 should open normally and down the React logo should appeard
 "Hello world" in blue.
 
-After finishing all this setup is time to move to your personal branch,
-try practicing repeating the last steps for pulling and switching to develop,
-but insted try to switch to your personal branch.
-{
-moni = $ git pull origin moni / $ git checkout moni
-
-charly = $ git pull origin charly / $ git checkout charly
-
-fausto = $ git pull origin fausto / $ git checkout fausto
-
-quielo = $ git pull origin quielo / $ git checkout quielo
-}
-
 Happy Hacking!
+
+PD: You can work any branches you want in your personal remote (your github account)
+but when makin a pull, you are requested to send it to the QA branch in
+https://github.com/Quielo/R6VC/tree/QA
+From there all code will be reviewed, if conflicts arise, they will be inspected in the same (QA) branch.
+After reviewing a pull and no conflics be detected, the code will be send to the "develop" branch by the
+repo owner (me). So whenever you want to make a fetch request to update your code before you start to work
+(and you will be required to do this before you start making any changes.) you should always do it from
+the "develop" branch.
+
+$ git fetch origin develop
+
+[
+Develop branch is our code up to date
+
+    QA branch is our code battleground
+
+]
