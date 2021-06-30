@@ -82,8 +82,11 @@ try practicing repeating the last steps for pulling and switching to develop,
 but insted try to switch to your personal branch. 
 {
   moni = $ git pull origin moni / $ git checkout moni
+  
   charly = $ git pull origin charly / $ git checkout charly
+  
   fausto = $ git pull origin fausto / $ git checkout fausto
+  
   quielo = $ git pull origin quielo / $ git checkout quielo
 }
 
