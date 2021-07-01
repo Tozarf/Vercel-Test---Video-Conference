@@ -1,6 +1,6 @@
 @font-face {
   font-family: roboto;
-  src: url("./fonts/Roboto-Regular.ttf");
+  src: url("./../../fonts/Roboto-Regular.ttf");
 }
 .room {
   position: absolute;
@@ -48,7 +48,7 @@
   left: 19px;
   top: 559px;
 
-  background: url("./images/snackbla4.png");
+  background: url("./../../images/snackbla4.png");
   border-radius: 30px;
 }
 .mic {
@@ -58,7 +58,7 @@
   left: 427px;
   top: 545px;
 
-  background: url("./images/mic.png");
+  background: url("./../../images/mic.png");
 }
 .arrow {
   position: absolute;
@@ -67,7 +67,7 @@
   left: 753px;
   top: 545px;
 
-  background: url("./images/arrow.png");
+  background: url("./../../images/arrow.png");
 }
 .userslist {
   position: absolute;
@@ -76,7 +76,7 @@
   left: 1169px;
   top: 9px;
 
-  background: url("./images/users.png");
+  background: url("./../../images/users.png");
 }
 .user1 {
   position: absolute;

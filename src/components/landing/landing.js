@@ -1,22 +1,21 @@
-import "./landing.css";
+import styles from "./App.module.scss";
 
 function landing() {
   return (
-    <div className="Landing_page">
-      <div className="App">
-        <div className="left_side">
-          <div className="logo"></div>
-          <div className="startmeeting"></div>
+    <div className={styles.Landing_page}>
+      <div className={styles.App}>
+        <div className={styles.left_side}>
+          <div className={styles.logo}></div>
+          <div className={styles.startmeeting}></div>
         </div>
 
-        <div className="center_up"></div>
-        <div className="center_down">
-          <div className="slider"></div>
+        <div className={styles.center_up}></div>
+        <div className={styles.center_down}>
+          <div className={styles.slider}></div>
         </div>
-        <div className="right_side"></div>
+        <div className={styles.right_side}></div>
       </div>
     </div>
   );
 }
-
 export default landing;
