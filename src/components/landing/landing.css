@@ -1,0 +1,72 @@
+.Landing_page {
+  text-align: center;
+}
+@font-face {
+  font-family: roboto;
+  src: url("./../../fonts/RobotoCondensed-Regular.ttf");
+}
+.startmeeting {
+  position: absolute;
+  width: 303px;
+  height: 203px;
+  left: 168px;
+  top: 336px;
+
+  background: url("./images/start_meeting.png");
+}
+.logo {
+  position: absolute;
+  width: 141px;
+  height: 99px;
+  left: 249px;
+  top: 198px;
+  background: url("./images/snack_bla.png");
+  border-radius: 30px;
+}
+
+.left_side {
+  position: absolute;
+  width: 638px;
+  height: 768px;
+  left: 0px;
+  top: 0px;
+  background: #000000;
+}
+
+.center_up {
+  position: absolute;
+  width: 107px;
+  height: 384px;
+  left: 638px;
+  top: 0px;
+
+  background: #fffafa;
+}
+.center_down {
+  position: absolute;
+  width: 107px;
+  height: 384px;
+  left: 638px;
+  top: 384px;
+
+  background: #c4c4c4;
+}
+
+.slider {
+  position: absolute;
+  width: 33px;
+  height: 138px;
+  left: 42px;
+  top: -76px;
+  opacity: 0.7;
+  background: url("./images/chip.png");
+}
+.right_side {
+  position: absolute;
+  width: 621px;
+  height: 827px;
+  left: 745px;
+  top: -59px;
+
+  background: url(./images/pexels-photo-6975523\ 1.png);
+}
