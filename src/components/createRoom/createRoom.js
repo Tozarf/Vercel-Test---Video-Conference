@@ -1,30 +1,30 @@
-import "./App.css";
+import styles from "./createRoom.module.scss";
 
 function createRoom() {
   return (
-    <div className="creatingRoom">
-      <div className="left_part">
-        <div className="blabla"></div>
-        <div className="girl"></div>
+    <div className={styles.creatingRoom}>
+      <div className={styles.left_part}>
+        <div className={styles.girl}></div>
+        <div className={styles.blabla}></div>
       </div>
 
-      <div className="centerUp"></div>
-      <div className="centerDown">
-        <div className="with"></div>
+      <div className={styles.centerUp}></div>
+      <div className={styles.centerDown}>
+        <div className={styles.with}></div>
       </div>
-      <div className="right_part">
-        <div className="logobla"></div>
-        <div className="letsnack">
-          <p className="snacktogether">
+      <div className={styles.right_part}>
+        <div className={styles.logobla}></div>
+        <div className={styles.letsnack}>
+          <p className={styles.snacktogether}>
             Let's snack together while meeting is going on.
             <br />
             <br />
             It's FREE! Try it!
           </p>
         </div>
-        <button className="newmeet">NEW MEETING</button>
-        <input type="text" className="link_input"></input>
-        <p className="join">Join!</p>
+        <button className={styles.newmeet}>NEW MEETING</button>
+        <input type="text" className={styles.link_input}></input>
+        <p className={styles.join}>Join!</p>
       </div>
     </div>
   );
