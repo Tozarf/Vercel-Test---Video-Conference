@@ -1,0 +1,150 @@
+@font-face {
+  font-family: roboto;
+  src: url("../../fonts/Roboto-Regular.ttf");
+}
+
+.containerCR {
+  height: 100vh;
+}
+.girl {
+  position: absolute;
+  width: 814px;
+  height: 768px;
+  left: -170px;
+  top: 0px;
+  background: url("../../images/girl.png");
+}
+.blabla {
+  position: absolute;
+  width: 536.52px;
+  height: 448.33px;
+  left: -32px;
+  top: 37.61px;
+  background: url("../../images/blabla.png");
+  transform: rotate(-24.99deg);
+}
+
+.centerUp {
+  position: absolute;
+  width: 107px;
+  height: 392px;
+  left: 643px;
+  top: 0px;
+
+  background: #fc512b;
+}
+.centerDown {
+  position: absolute;
+  width: 107px;
+  height: 376px;
+  left: 643px;
+  top: 392px;
+
+  background: #fffafa;
+}
+
+.slider{
+  transform: rotate(-90deg);
+  .switch_button {
+    display: inline-block;
+    .switch_button__checkbox {
+      display: none;
+    }
+    .switch_button__label {
+      background-color: var(--color-on);
+      color: var(--color-button);
+      width: 10rem;
+      height: 2rem;
+      border-radius: 2rem;
+      box-shadow:inset 0px 3px 3px #555555;
+      display: inline-block;
+      position: relative;
+      &:before {
+        transition: .2s;
+        display: block;
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        background-color: var(--color-button);
+        content: '';
+        border-radius: 50%;
+        box-shadow:0px 2px 3px #505050;
+        transform: translateX(7.7rem);
+      }
+    }
+    .switch_button__checkbox:checked + .switch_button__label {
+      background-color: var(--color-off);
+    }
+    .switch_button__checkbox:checked + .switch_button__label:before {
+      transform: translateX(0.3rem);
+    }
+  }
+}
+.right_part {
+  position: absolute;
+  width: 638px;
+  height: 768px;
+  left: 750px;
+  top: 0px;
+
+  background: #000000;
+}
+
+.logobla {
+  position: absolute;
+  width: 240px;
+  height: 169px;
+  left: 216px;
+  top: 81px;
+
+  background: url("../../images/snackbla3.png");
+  border-radius: 30px;
+}
+.snacktogether {
+  position: absolute;
+  width: 268px;
+  height: 100px;
+  left: 184px;
+  top: 279px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.0357143em;
+
+  color: #ffffff;
+}
+.newmeet {
+  position: absolute;
+  width: 166px;
+  height: 40px;
+  left: 234px;
+  top: 435px;
+}
+.link_input {
+  position: absolute;
+  width: 336px;
+  height: 38px;
+  left: 147px;
+  top: 517px;
+}
+.join {
+  position: absolute;
+  width: 268px;
+  height: 100px;
+  left: 184px;
+  top: 551px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.0357143em;
+
+  color: #ffffff;
+}

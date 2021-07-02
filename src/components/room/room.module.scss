@@ -1,0 +1,192 @@
+@font-face {
+    font-family: roboto;
+    src: url("../../fonts/Roboto-Regular.ttf");
+  }
+  .room {
+    position: absolute;
+    width: 1366px;
+    height: 768px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.24) 100%
+    );
+  }
+  .welcomecontainer {
+    z-index: 1;
+    position: absolute;
+    width: 453px;
+    height: 216px;
+    left: 461px;
+    top: 151px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 20px;
+  }
+  .welcomemessage {
+    position: absolute;
+    width: 177px;
+    height: 24px;
+    left: 138px;
+    top: 0px;
+    text-align: center;
+  
+    font-family: roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+  
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .enterName {
+    position: absolute;
+    width: 269px;
+    height: 24px;
+    left: -44px;
+    top: 62px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+  
+    color: rgba(0, 0, 0, 0.541327);
+  }
+  .inputNickname {
+    text-align: center;
+    left: -73px;
+    top: 43px;
+  }
+  .okButton {
+    position: absolute;
+    width: 119.42px;
+    height: 30px;
+    left: 170px;
+    top: 171px;
+  }
+  .okButton:hover {
+    background-color: #c57714;
+  }
+  .roomcontainer {
+    position: absolute;
+    width: 1227px;
+    height: 653px;
+    left: 68px;
+    top: 54px;
+  
+    background: #ffffff;
+  }
+  .roomname {
+    position: absolute;
+    width: 141px;
+    height: 43px;
+    left: 17px;
+    top: 0px;
+  
+    font-family: roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.0357143em;
+  
+    color: #000000;
+  }
+  .logodown {
+    position: absolute;
+    width: 141px;
+    height: 99px;
+    left: 19px;
+    top: 559px;
+  
+    background: url("../../images/snackbla4.png");
+    border-radius: 30px;
+  }
+  .mic {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    left: 427px;
+    top: 545px;
+  
+    background: url("../../images/mic.png");
+  }
+  .arrow {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    left: 753px;
+    top: 545px;
+  
+    background: url("../../images/arrow.png");
+  }
+  .userslist {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    left: 1169px;
+    top: 9px;
+  
+    background: url("../../images/users.png");
+  }
+  .user1 {
+    position: absolute;
+    width: 328px;
+    height: 212px;
+    left: 194px;
+    top: 41px;
+    background-color: #ac7d7d;
+    border-radius: 20px;
+  }
+  .user2 {
+    position: absolute;
+    width: 328px;
+    height: 212px;
+    left: 716px;
+    top: 41px;
+    background-color: #927474;
+    border-radius: 20px;
+  }
+  .user3 {
+    position: absolute;
+    width: 328px;
+    height: 212px;
+    left: 455px;
+    top: 314px;
+    background-color: #8d4747;
+    border-radius: 20px;
+  }
+  
+  .usernamecontainer {
+    position: absolute;
+    width: 109px;
+    height: 31px;
+    left: 0px;
+    top: 181px;
+  
+    background: #000000;
+  }
+  .username {
+    position: absolute;
+    width: 42px;
+    height: 16px;
+    left: 33px;
+    top: -5px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.0357143em;
+  
+    color: #ffffff;
+  }
