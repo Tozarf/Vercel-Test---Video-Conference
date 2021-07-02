@@ -113,7 +113,19 @@ function Room(props) {
 
     return (
       <div className={styles.room}>
-        <div className={styles.welcomecontainer}>
+        <div className={styles.linkPopUp}>
+        <h3 className={styles.permission}>Permissions</h3>
+        <p className={styles.instructions}>
+          Edit the name of the room related to the topic of the meeting.<br/> As you
+          wish! Share the code with your guests.<br/>And the meeting is ready!
+        </p>
+        <div className={styles.urlContainer}>
+          <h3 className={styles.url}>_____Url_here!_____</h3>
+          <div className={styles.copyIcon}></div>
+        </div>
+      </div>
+      <div className={styles.room}></div>
+        {/*<div className={styles.welcomecontainer}>
           <p className={styles.welcomemessage}>
             {" "}
             Welcome!
@@ -131,7 +143,7 @@ function Room(props) {
           <button id="buttonOk" className={styles.okButton}>
             OK!
           </button>
-        </div>
+    </div>*/}
   
         <div className={styles.roomcontainer}>
           <div className={styles.roomname}>

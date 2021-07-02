@@ -14,6 +14,69 @@
       rgba(0, 0, 0, 0.24) 100%
     );
   }
+
+  .linkPopUp {
+    z-index: 1;
+    position: absolute;
+    width: 640px;
+    height: 216px;
+    left: 363px;
+    top: 84px;
+    padding: 2rem;
+  
+    background: #fafafa;
+    box-shadow: 0px 15px 12px rgba(0, 0, 0, 0.22),
+      0px 19px 38px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+  }
+
+  .urlContainer {
+    position: absolute;
+    width: 530px;
+    height: 57px;
+    left: 100px;
+    top: 170px;
+  
+    background: #c4c4c4;
+    .url {
+      position: absolute;
+      width: 125px;
+      height: 24px;
+      left: 196px;
+      top: 0px;
+  
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      /* identical to box height, or 133% */
+  
+      display: flex;
+      align-items: center;
+  
+      color: #000000;
+    }
+  }
+  .copyIcon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 492px;
+    top: 15px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    background-image: url("../../images/copy_icon.png");
+  }
+  .copyIcon:hover {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 492px;
+    top: 15px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    background-image: url("../../images/copygreen.png");
+  }
+
   .welcomecontainer {
     z-index: 1;
     position: absolute;
