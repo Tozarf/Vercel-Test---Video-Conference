@@ -18,7 +18,6 @@
   height: 203px;
   left: 168px;
   top: 336px;
-
   background: url("./../../images/start_meeting.png");
 }
 .logo {
@@ -75,6 +74,7 @@
       display: inline-block;
       position: relative;
       &:before {
+        cursor: pointer;
         transition: .2s;
         display: block;
         position: absolute;
@@ -96,13 +96,11 @@
   }
 }
 
-
 .right_side {
   position: absolute;
   width: 621px;
   height: 827px;
   left: 745px;
   top: -59px;
-
   background: url("./../../images/pexels-photo-6975523\ 1.png");
 }

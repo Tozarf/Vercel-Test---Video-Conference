@@ -32,12 +32,10 @@ const Video = (props) => {
     );
 }
 
-
 const videoConstraints = {
     height: window.innerHeight / 2,
     width: window.innerWidth / 2
 };
-
 
 function Room(props) {
   const [peers, setPeers] = useState([]);
@@ -45,6 +43,19 @@ function Room(props) {
     const userVideo = useRef();
     const peersRef = useRef([]);
     const roomID = props.match.params.roomID;
+    const [show, setShow] = useState(true);
+
+    function logOut() {
+      props.history.push("/");
+      window.location.reload(true);
+    }
+
+    const handleModalClose = (props) => {
+      setShow(false);  
+    }
+    const handleModalOpen = () => {
+      setShow(true);
+    }
 
     useEffect(() => {
         //io('http://localhost:8000/');
@@ -116,11 +127,13 @@ function Room(props) {
 
     return (
       <div className={styles.room}>
-        <div className={styles.linkPopUp}>
+        <div className={styles.linkPopUp} hidden={!show}>
         <h3 className={styles.permission}>Permissions</h3>
+        <div className={styles.close} onClick={handleModalClose}></div>
         <p className={styles.instructions}>
-          Edit the name of the room related to the topic of the meeting.<br/> As you
-          wish! Share the code with your guests.<br/>And the meeting is ready!
+          <mark>Edit the name of the room. As you wish!</mark><br/>
+          Share the code with your guests.<br/>
+          And your meeting is ready!
         </p>
         <div className={styles.urlContainer}>
           <h3 className={styles.url}>{URLactual}</h3>
@@ -153,8 +166,7 @@ function Room(props) {
             <p>ROOM NAME</p>
           </div>
           <div className={styles.logodown}></div>
-          <div className={styles.mic}></div>
-          <div className={styles.arrow}></div>
+          <div className={styles.arrow} onClick={logOut}></div>
           <div className={styles.userslist}></div>
           <Container>
             <StyledVideo muted ref={userVideo} autoPlay playsInline />

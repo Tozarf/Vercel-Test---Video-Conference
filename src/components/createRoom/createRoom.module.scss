@@ -118,11 +118,19 @@
   color: #ffffff;
 }
 .newmeet {
+  cursor: pointer;
   position: absolute;
   width: 166px;
   height: 40px;
   left: 234px;
   top: 435px;
+  background-color: #FEB04D;
+  font-style:normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.0357143em;
 }
 .link_input {
   position: absolute;
@@ -137,7 +145,7 @@
   height: 100px;
   left: 184px;
   top: 551px;
-
+  cursor: pointer;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
