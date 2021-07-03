@@ -38,6 +38,7 @@ const videoConstraints = {
     width: window.innerWidth / 2
 };
 
+
 function Room(props) {
   const [peers, setPeers] = useState([]);
     const socketRef = useRef();
@@ -46,7 +47,7 @@ function Room(props) {
     const roomID = props.match.params.roomID;
 
     useEffect(() => {
-        io('http://localhost:8000/');
+        //io('http://localhost:8000/');
         socketRef.current = io.connect("/");
         navigator.mediaDevices.getUserMedia({ video: videoConstraints, audio: true }).then(stream => {
             userVideo.current.srcObject = stream;
@@ -111,6 +112,8 @@ function Room(props) {
         return peer;
     }
 
+    var URLactual = window.location.href;
+
     return (
       <div className={styles.room}>
         <div className={styles.linkPopUp}>
@@ -120,7 +123,7 @@ function Room(props) {
           wish! Share the code with your guests.<br/>And the meeting is ready!
         </p>
         <div className={styles.urlContainer}>
-          <h3 className={styles.url}>_____Url_here!_____</h3>
+          <h3 className={styles.url}>{URLactual}</h3>
           <div className={styles.copyIcon}></div>
         </div>
       </div>
