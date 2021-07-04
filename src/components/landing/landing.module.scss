@@ -1,64 +1,57 @@
 :root {
-  --color-on: #abdd46f4;
+  --color-on: #FDEE23;
   --color-off: rgba(153, 153, 153, 0.896);
   --color-button: #fdffff;
   --color-black: #000;
+  --color-blue: 
 }
-.Landing_page {
-  text-align: center;
-  color: var(--color-button);
+.right_side {
+  position: absolute;
+  width: 50vw;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-position: center;
+  background: url("../../images/E_OFF.png");
+  background-size: cover;
 }
+.left_side {
+  position: absolute;
+  width: 45vw;
+  height: 100%;
+  left: calc(100% - 45vw);
+  top: 0px;
+  background: #128efe;
+  .startmeeting {
+    position: absolute;
+    width: 303px;
+    height: 203px;
+    left: 168px;
+    top: 336px;
+    background: url("./../../images/start_meeting.png");
+  }
+  .logo {
+    position: absolute;
+    width: 141px;
+    height: 99px;
+    left: 249px;
+    top: 198px;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background: url("./../../images/enroute-logo-pro.png");
+    background-size: cover;
+  }
+}
+
 @font-face {
   font-family: roboto;
   src: url("./../../fonts/Roboto-Regular.ttf");
 }
-.startmeeting {
-  position: absolute;
-  width: 303px;
-  height: 203px;
-  left: 168px;
-  top: 336px;
-  background: url("./../../images/start_meeting.png");
-}
-.logo {
-  position: absolute;
-  width: 141px;
-  height: 99px;
-  left: 249px;
-  top: 198px;
-  background: url("./../../images/snack_bla.png");
-  border-radius: 30px;
-}
 
-.left_side {
-  position: absolute;
-  width: 638px;
-  height: 768px;
-  left: 0px;
-  top: 0px;
-  background: #000000;
-}
-
-.center_up {
-  position: absolute;
-  width: 107px;
-  height: 384px;
-  left: 638px;
-  top: 0px;
-
-  background: #fffafa;
-}
-.center_down {
-  position: absolute;
-  width: 107px;
-  height: 384px;
-  left: 638px;
-  top: 384px;
-
-  background: #c4c4c4;
-}
 .slider{
   transform: rotate(-90deg);
+  margin-top:  -13%;
+  margin-left: 5%;
   .switch_button {
     display: inline-block;
     .switch_button__checkbox {
@@ -94,13 +87,4 @@
       transform: translateX(7.7rem);
     }
   }
-}
-
-.right_side {
-  position: absolute;
-  width: 621px;
-  height: 827px;
-  left: 745px;
-  top: -59px;
-  background: url("./../../images/pexels-photo-6975523\ 1.png");
 }

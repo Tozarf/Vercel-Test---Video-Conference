@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { v1 as uuid } from "uuid";
 import styles from "./createRoom.module.scss";
 
@@ -8,17 +8,15 @@ const Meeting = (props) => {
     props.history.push(`/room/${id}`);
   }
   function turnOff() {
-    props.history.push("/");
+    props.history.push("/back-soon");
   }
-
+  const [urlLink, seturlLink] = useState('');
   return (
     <div className={styles.containerCR}>
       <div className={styles.creatingRoom}>
       <div className={styles.left_part}>
-        <div className={styles.girl}></div>
-        <div className={styles.blabla}></div>
+        <div className={styles.on}></div>
       </div>
-      <div className={styles.centerUp}></div>
       <div className={styles.centerDown}>
       <div className={styles.slider}>
             <div className={styles.switch_button}>
@@ -40,11 +38,11 @@ const Meeting = (props) => {
             It's FREE! Try it!
           </p>
         </div>
-        <button className={styles.newmeet} onClick={create}>
+        <div className={styles.newmeet} onClick={create}>
           NEW MEETING
-        </button>
-        <input type="text" className={styles.link_input}></input>
-        <p className={styles.join}>Join!</p>
+        </div>
+        <input type="text" placeholder="Enter your URL" className={styles.link_input} onChange={(link) => seturlLink(link.target.value)}/>
+        <div join={true} exat path={"/"} onClick={() => window.location = urlLink}  className={styles.join}>Join!</div>
       </div>
     </div>
     </div>
