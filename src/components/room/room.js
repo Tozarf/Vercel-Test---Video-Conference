@@ -206,23 +206,9 @@ function Room(props) {
             className={styles.host}
           />
           {peers.map((peer, index) => {
-            return (
-              <Video
-                muted
-                controls
-                playsInline
-                playsInline
-                key={index}
-                peer={peer}
-              />
-            );
+            return <Video muted controls playsInline key={index} peer={peer} />;
           })}
         </Container>
-        <div className={styles.roomcontainer}>
-          <div className={styles.roomname}>
-            <p>ROOM NAME</p>
-          </div>
-        </div>
       </div>
     </div>
   );
