@@ -76,8 +76,6 @@ NAME LIST TO UPDATE:
 
 4-
 
-5-
-
 \*\*Also everything should be update, but in case it doesn't, write down:
 
     $ git pull origin QA
