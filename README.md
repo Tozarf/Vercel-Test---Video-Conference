@@ -70,13 +70,13 @@ NAME LIST TO UPDATE:
 
 1- Quielo
 
-2- Roier
+2- Charly
 
-3-
+3- Fausto
 
-4-
+4-Monica
 
-5-
+5.-
 
 \*\*Also everything should be update, but in case it doesn't, write down:
 
