@@ -45,6 +45,8 @@ function Room(props) {
   const [showUrl, setShowUrl] = useState(true);
   const [showName, setShowName] = useState(true);
   const [roomName, setroomName] = useState("ROOM NAME");
+  const [userName, setUserName] = useState("");
+  console.log(userName);
 
   function logOut() {
     props.history.push("/back-soon");
@@ -174,6 +176,8 @@ function Room(props) {
           <br />
           <input
             type="text"
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
             placeholder="Name"
             className={styles.inputNickname}
           ></input>
@@ -196,6 +200,7 @@ function Room(props) {
         <div className={styles.link} onClick={handleModalOpen}></div>
         <div className={styles.arrow} onClick={logOut}></div>
         <div className={styles.userslist}></div>
+
         <Container>
           <StyledVideo
             muted
@@ -205,6 +210,7 @@ function Room(props) {
             ref={userVideo}
             className={styles.host}
           />
+
           {peers.map((peer, index) => {
             return <Video muted controls playsInline key={index} peer={peer} />;
           })}
