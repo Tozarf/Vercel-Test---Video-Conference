@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 import Peer from "simple-peer";
 import styled from "styled-components";
-//import e from 'cors';
 
 const Container = styled.div`
     display: flex;
@@ -148,40 +147,10 @@ function Room(props) {
           </div>
         </div>
         <div className={styles.welcomecontainer} hidden={!showName}>
-          <p className={styles.welcomemessage}>
-            {" "}
-            Welcome!
-            <br />
-            <span className={styles.enterName}>
-              Enter your name o nickname to start!
-              <span />
-            </span>{" "}
-            <br />
-            <br />
-            <br />
-            <br />
-            <input type="text" placeholder="Name" className={styles.inputNickname}></input>
-          </p>
-          <button id="buttonOk" onClick={handleSecondModalClose} className={styles.okButton}>
-            OK!
-          </button>
-         </div>
-          <div className={styles.roomcontainer}>
-            <div className={styles.roomname}>
-              <p contentEditable="true" onChange={() => setroomName(roomName)}>{roomName}</p>
-            </div>
-            <div className={styles.logodown}></div>
-            <div className={styles.link} onClick={handleModalOpen}></div>
-            <div className={styles.arrow} onClick={logOut}></div>
-            <div className={styles.userslist}></div>
-            <Container>
-              <StyledVideo muted controls autoPlay playsInline ref={userVideo} className={styles.host}/>
-              {peers.map((peer, index) => {
-                  return (
-                      <Video muted controls playsInline playsInline key={index} peer={peer} />
-                  );
-              })}
-            </Container>
+        <div className={styles.roomcontainer}>
+          <div className={styles.roomname}>
+            <p>ROOM NAME</p>
+
           </div>
     </div>
   );

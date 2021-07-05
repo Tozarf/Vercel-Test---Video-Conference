@@ -52,10 +52,14 @@
       cursor: pointer;
     }
   }
+
   .instructions {
     margin-left: 15px;
   }
   .urlContainer {
+
+  .welcomecontainer {
+    z-index: 1;
     position: absolute;
     width: 530px;
     height: 57px;
